@@ -1,7 +1,11 @@
+# Front Matter
 ---
 title: "비동기 태스크 큐"
-date: 2022-01-24
-categories: jekyll update
+categories: tool
+tags: jekyll
+# 목차
+toc: true  
+toc_sticky: true 
 ---
 
 # 대중적인 태스크 큐 소프트웨어
