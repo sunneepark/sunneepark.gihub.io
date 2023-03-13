@@ -4,9 +4,8 @@ date: 2022-02-19
 categories: jekyll update
 ---
 
-1. filebeat 설치
+# filebeat 설치
 
-filebeat 파일 설치
 deb(filebeat-5.6.2-linux-x86_64.deb) 설치시 -e 옵션으로 적용되어있어서 로그를 남기지 않음.
 
 ```bash
@@ -54,10 +53,10 @@ logging.files:
 
 /home1/irteam/db/apps/filebeat/filebeat -c test_filebeat.yml &
 
+<br>
 
 
-
-1. Elastic Search 설치
+# Elastic Search 설치
 
  
 ```bash
@@ -119,7 +118,7 @@ curl --user elastic:elastic12#$ -X POST "http://127.0.0.1:9200/_security/user/te
 ```
 
 
-1. logstash 띄우기
+# logstash 띄우기
 
 ```
 wget https://artifacts.elastic.co/downloads/logstash/logstash-7.6.2.tar.gz
@@ -127,6 +126,6 @@ tar xvfz logstash-7.6.2.tar.gz
 ```
 
 
-1. 구조
+# 구조
 
 filebeat -> logstash -> elastic search -> grafana
